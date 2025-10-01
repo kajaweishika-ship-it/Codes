@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    int year;
+    printf("Enter a year: ");
+    scanf("%d", &year);
+
+    if (year % 400 == 0)
+        printf("Leap Century Year\n");
+    else
+        printf("Not a Leap Century Year\n");
+
+    return 0;
+}
