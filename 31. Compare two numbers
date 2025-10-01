@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+    float a, b;
+    printf("Enter two float numbers: ");
+    scanf("%f %f", &a, &b);
+
+    if (a > b)
+        printf("%.2f is larger\n", a);
+    else if (b > a)
+        printf("%.2f is larger\n", b);
+    else
+        printf("Both are equal\n");
+
+    return 0;
+}
