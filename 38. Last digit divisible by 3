@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    int n, last;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    last = n % 10;
+    if (last % 3 == 0)
+        printf("Last digit divisible by 3\n");
+    else
+        printf("Last digit not divisible by 3\n");
+
+    return 0;
+}
