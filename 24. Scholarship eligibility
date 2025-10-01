@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    int percentage, attendance;
+    printf("Enter percentage and attendance: ");
+    scanf("%d %d", &percentage, &attendance);
+
+    if (percentage >= 85 && attendance >= 75)
+        printf("Eligible for Scholarship\n");
+    else
+        printf("Not Eligible\n");
+
+    return 0;
+}
