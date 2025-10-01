@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    int n;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    if (n % 4 == 0 && n % 8 != 0)
+        printf("Multiple of 4 but not 8\n");
+    else
+        printf("Does not satisfy the condition\n");
+
+    return 0;
+}
