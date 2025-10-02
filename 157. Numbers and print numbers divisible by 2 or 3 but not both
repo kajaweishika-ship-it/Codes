@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+    int n, num;
+    printf("Enter number of elements: ");
+    scanf("%d",&n);
+    printf("Numbers divisible by 2 or 3 but not both: ");
+    for(int i=0;i<n;i++){
+        scanf("%d",&num);
+        if((num%2==0 || num%3==0) && !(num%2==0 && num%3==0)) printf("%d ", num);
+    }
+    return 0;
+}
