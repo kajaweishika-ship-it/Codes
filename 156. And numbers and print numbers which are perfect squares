@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+    int n, num;
+    printf("Enter number of elements: ");
+    scanf("%d",&n);
+    printf("Perfect squares: ");
+    for(int i=0;i<n;i++){
+        scanf("%d",&num);
+        int root = sqrt(num);
+        if(root*root == num) printf("%d ", num);
+    }
+    return 0;
+}
