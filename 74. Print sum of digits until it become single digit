@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    int n = 9875, sum;
+    while(n > 9) {
+        sum = 0;
+        while(n != 0) {
+            sum += n % 10;
+            n /= 10;
+        }
+        n = sum;
+    }
+    printf("Final single digit = %d", n);
+    return 0;
+}
