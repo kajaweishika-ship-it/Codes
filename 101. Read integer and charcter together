@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main() {
+    int n;
+    char ch;
+    printf("Enter integer and character: ");
+    scanf("%d %c", &n, &ch);
+    printf("Integer: %d, Character: %c", n, ch);
+    return 0;
+}
