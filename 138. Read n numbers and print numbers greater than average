@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+    int n;
+    printf("Enter number of elements: ");
+    scanf("%d",&n);
+    int arr[n], sum=0;
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+        sum+=arr[i];
+    }
+    float avg = sum/(float)n;
+    printf("Numbers greater than average: ");
+    for(int i=0;i<n;i++){
+        if(arr[i]>avg) printf("%d ",arr[i]);
+    }
+    return 0;
+}
