@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+    int n, num;
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+    printf("Numbers divisible by 8 but not by 16: ");
+    for(int i=0; i<n; i++){
+        scanf("%d", &num);
+        if(num % 8 == 0 && num % 16 != 0) printf("%d ", num);
+    }
+    return 0;
+}
