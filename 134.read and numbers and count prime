@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+    int n, num, count=0, flag;
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+    for(int i=0; i<n; i++){
+        scanf("%d", &num);
+        if(num<2) continue;
+        flag=0;
+        for(int j=2; j*j<=num; j++){
+            if(num % j == 0){ flag=1; break; }
+        }
+        if(flag==0) count++;
+    }
+    printf("Number of primes = %d", count);
+    return 0;
+}
