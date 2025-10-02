@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    int n, num, min;
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+    scanf("%d", &min); // first element as initial min
+    for(int i=1; i<n; i++){
+        scanf("%d", &num);
+        if(num < min) min = num;
+    }
+    printf("Minimum = %d", min);
+    return 0;
+}
