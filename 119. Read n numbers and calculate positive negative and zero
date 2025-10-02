@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+    int n, pos=0, neg=0, zero=0, num;
+    printf("How many numbers? ");
+    scanf("%d",&n);
+    printf("Enter %d numbers: ", n);
+    for(int i=0;i<n;i++){
+        scanf("%d",&num);
+        if(num>0) pos++;
+        else if(num<0) neg++;
+        else zero++;
+    }
+    printf("Positive=%d, Negative=%d, Zero=%d", pos, neg, zero);
+    return 0;
+}
