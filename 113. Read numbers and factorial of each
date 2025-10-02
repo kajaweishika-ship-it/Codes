@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    int n;
+    printf("How many numbers? ");
+    scanf("%d",&n);
+    int num, fact;
+    for(int i=0;i<n;i++){
+        scanf("%d",&num);
+        fact=1;
+        for(int j=1;j<=num;j++) fact *= j;
+        printf("Factorial of %d = %d\n", num, fact);
+    }
+    return 0;
+}
