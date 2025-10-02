@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    int a = 36, b = 60, hcf, lcm, temp1, temp2;
+    temp1 = a; temp2 = b;
+    while(a != b) {
+        if(a > b) a -= b;
+        else b -= a;
+    }
+    hcf = a;
+    lcm = (temp1*temp2)/hcf;
+    printf("HCF = %d, LCM = %d", hcf, lcm);
+    return 0;
+}
