@@ -1,0 +1,10 @@
+#include <stdio.h>
+int countPositive(int a[],int n){
+    int c=0;
+    for(int i=0;i<n;i++) if(a[i]>0) c++;
+    return c;
+}
+int main(){
+    int a[]={-2,3,5,-1,0,9};
+    printf("Positive count=%d",countPositive(a,6));
+}
