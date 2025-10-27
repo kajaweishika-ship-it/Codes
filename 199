@@ -1,0 +1,12 @@
+#include <stdio.h>
+void sumEvenOdd(int a[],int n){
+    int se=0,so=0;
+    for(int i=0;i<n;i++)
+        if(a[i]%2==0) se+=a[i];
+        else so+=a[i];
+    printf("Even sum=%d Odd sum=%d",se,so);
+}
+int main(){
+    int a[]={1,2,3,4,5};
+    sumEvenOdd(a,5);
+}
