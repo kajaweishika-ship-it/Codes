@@ -1,0 +1,13 @@
+#include <stdio.h>
+void sortDesc(int a[],int n){
+    for(int i=0;i<n-1;i++)
+        for(int j=i+1;j<n;j++)
+            if(a[i]<a[j]){
+                int t=a[i]; a[i]=a[j]; a[j]=t;
+            }
+}
+int main(){
+    int a[]={5,2,8,1,4};
+    sortDesc(a,5);
+    for(int i=0;i<5;i++) printf("%d ",a[i]);
+}
