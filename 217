@@ -1,0 +1,10 @@
+#include <stdio.h>
+float avg(int a[], int n){
+    int sum=0;
+    for(int i=0;i<n;i++) sum+=a[i];
+    return (float)sum/n;
+}
+int main(){
+    int a[]={10,20,30,40,50};
+    printf("Average = %.2f", avg(a,5));
+}
