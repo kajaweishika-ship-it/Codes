@@ -1,0 +1,13 @@
+#include <stdio.h>
+int secondLargest(int a[],int n){
+    int first=a[0], second=-9999;
+    for(int i=1;i<n;i++){
+        if(a[i]>first){ second=first; first=a[i]; }
+        else if(a[i]>second && a[i]!=first) second=a[i];
+    }
+    return second;
+}
+int main(){
+    int a[]={5,8,2,9,7};
+    printf("Second largest=%d",secondLargest(a,5));
+}
