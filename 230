@@ -1,0 +1,10 @@
+#include <stdio.h>
+int countGT10(int a[], int n){
+    int c=0;
+    for(int i=0;i<n;i++) if(a[i]>10) c++;
+    return c;
+}
+int main(){
+    int a[]={5,12,8,20,11};
+    printf("Count = %d", countGT10(a,5));
+}
