@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+    char a[50], b[50], temp[50];
+    printf("Enter first: ");
+    gets(a);
+    printf("Enter second: ");
+    gets(b);
+    strcpy(temp,a);
+    strcpy(a,b);
+    strcpy(b,temp);
+    printf("After swap: %s %s", a, b);
+}
