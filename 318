@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+    char s[50]; int i, flag=0;
+    printf("Enter string: ");
+    gets(s);
+    for(i=0; s[i]!='\0'; i++)
+        if(!(s[i]>='0' && s[i]<='9')) flag=1;
+    if(flag) printf("Not numeric");
+    else printf("Numeric");
+}
