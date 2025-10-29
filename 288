@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main(){
+    int att;
+    printf("Enter attendance percentage: ");
+    scanf("%d",&att);
+    switch(att>=75){
+        case 1: printf("Eligible for exam"); break;
+        case 0: printf("Not eligible");
+    }
+}
