@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <math.h>
+int main(){
+    int ch; float n;
+    printf("1.Square 2.Square Root: ");
+    scanf("%d",&ch);
+    printf("Enter number: ");
+    scanf("%f",&n);
+    switch(ch){
+        case 1: printf("Square=%.2f",n*n); break;
+        case 2: printf("Root=%.2f",sqrt(n)); break;
+        default: printf("Invalid");
+    }
+}
