@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    char s[100];
+    int a=0, d=0, sp=0, i;
+    printf("Enter string: ");
+    gets(s);
+    for(i=0; s[i]!='\0'; i++) {
+        if((s[i]>='a'&&s[i]<='z')||(s[i]>='A'&&s[i]<='Z')) a++;
+        else if(s[i]>='0'&&s[i]<='9') d++;
+        else sp++;
+    }
+    printf("Alphabets=%d, Digits=%d, Symbols=%d", a,d,sp);
+}
