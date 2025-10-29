@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main(){
+    char c;
+    printf("Enter character: ");
+    scanf("%c",&c);
+    switch(c>='A' && c<='Z'){
+        case 1: printf("Uppercase"); break;
+        case 0: printf("Lowercase");
+    }
+}
