@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main(){
+    int ch;
+    printf("1.Login 2.Exit: ");
+    scanf("%d",&ch);
+    switch(ch){
+        case 1: printf("Welcome!"); break;
+        case 2: printf("Goodbye!"); break;
+        default: printf("Invalid");
+    }
+}
