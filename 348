@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+    char s[10];
+    printf("Enter yes or no: ");
+    gets(s);
+    if(strcmp(s,"yes")==0)
+        printf("Affirmative");
+    else if(strcmp(s,"no")==0)
+        printf("Negative");
+    else
+        printf("Invalid input");
+}
