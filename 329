@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+    char s[100];
+    printf("Enter string: ");
+    gets(s);
+    int len = strlen(s);
+    printf("Middle character: %c", s[len/2]);
+}
