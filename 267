@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+    int ch;
+    printf("1.Red 2.Yellow 3.Green: ");
+    scanf("%d",&ch);
+    switch(ch){
+        case 1: printf("STOP!"); break;
+        case 2: printf("WAIT!"); break;
+        case 3: printf("GO!"); break;
+        default: printf("Invalid");
+    }
+}
