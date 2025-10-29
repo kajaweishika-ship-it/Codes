@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main(){
+    int ch;
+    printf("1.Withdraw 2.Deposit 3.Check Balance: ");
+    scanf("%d",&ch);
+    switch(ch){
+        case 1: printf("Withdraw selected"); break;
+        case 2: printf("Deposit selected"); break;
+        case 3: printf("Balance checked"); break;
+        default: printf("Invalid");
+    }
+}
