@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main() {
+    int m;
+    printf("Enter marks: ");
+    scanf("%d",&m);
+    switch(m >= 40) {
+        case 1: printf("Pass"); break;
+        case 0: printf("Fail");
+    }
+}
