@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    char g;
+    printf("Enter grade (A-D): ");
+    scanf(" %c", &g);
+    switch(g) {
+        case 'A': printf("Excellent"); break;
+        case 'B': printf("Good"); break;
+        case 'C': printf("Average"); break;
+        case 'D': printf("Poor"); break;
+        default: printf("Fail");
+    }
+}
