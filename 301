@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+    char a[50], b[50];
+    printf("Enter first string: ");
+    gets(a);
+    printf("Enter second string: ");
+    gets(b);
+    if(strlen(a) > strlen(b))
+        printf("First is longer");
+    else if(strlen(a) < strlen(b))
+        printf("Second is longer");
+    else
+        printf("Both equal length");
+}
