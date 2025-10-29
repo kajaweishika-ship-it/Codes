@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main(){
+    int n,ch;
+    printf("1.Square 2.Cube: ");
+    scanf("%d",&ch);
+    printf("Enter number: ");
+    scanf("%d",&n);
+    switch(ch){
+        case 1: printf("Square=%d",n*n); break;
+        case 2: printf("Cube=%d",n*n*n); break;
+        default: printf("Invalid");
+    }
+}
