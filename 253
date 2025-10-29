@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+    int ch;
+    printf("1.Morning 2.Afternoon 3.Night: ");
+    scanf("%d",&ch);
+    switch(ch) {
+        case 1: printf("Good Morning!"); break;
+        case 2: printf("Good Afternoon!"); break;
+        case 3: printf("Good Night!"); break;
+        default: printf("Invalid");
+    }
+}
