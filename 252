@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    int n, ch;
+    printf("1.Check Even/Odd 2.Exit: ");
+    scanf("%d",&ch);
+    switch(ch) {
+        case 1: printf("Enter number: "); scanf("%d",&n);
+                switch(n%2){
+                    case 0: printf("Even"); break;
+                    case 1: printf("Odd");
+                } break;
+        case 2: printf("Exiting...");
+    }
+}
