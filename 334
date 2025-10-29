@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+    char s[100];
+    printf("Enter email: ");
+    gets(s);
+    if(strstr(s, ".com"))
+        printf("Valid (.com) email");
+    else
+        printf("Not .com email");
+}
