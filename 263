@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main() {
+    int h;
+    printf("Enter hour (0–23): ");
+    scanf("%d",&h);
+    switch(h>=6 && h<18) {
+        case 1: printf("Daytime"); break;
+        case 0: printf("Nighttime");
+    }
+}
