@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(){
+    int ch; float m;
+    printf("1.M to CM 2.M to MM 3.M to KM: ");
+    scanf("%d",&ch);
+    printf("Enter meters: ");
+    scanf("%f",&m);
+    switch(ch){
+        case 1: printf("%.2f cm",m*100); break;
+        case 2: printf("%.2f mm",m*1000); break;
+        case 3: printf("%.2f km",m/1000); break;
+        default: printf("Invalid");
+    }
+}
